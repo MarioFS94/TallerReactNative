@@ -7,3 +7,8 @@ Instalación
     -	En el path: C:\Users\mario.fernandezsuare\AppData\Local\Android\Sdk\platform-tools
 -    react-native start - Iniciar Metro builder
 -    react-native run-android - Iniciar app en emulador AndroidStudio
+-   npm install -g json-server
+    -   En scripts-> package.json: "json": "json-server --watch ./src/assets/db.json  --port 3004"
+-   npm i react-native-elements --save
+    -   npm i --save react-native-vector-icons
+    -   react-native link react-native-vector-icons
