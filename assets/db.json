@@ -77,29 +77,14 @@
   ],
   "cesta": [
     {
-      "id": 1,
       "item": 1,
-      "cantidad": 1
-    },
-    {
-      "id": 2,
-      "item": 3,
-      "cantidad": 2
-    },
-    {
-      "id": 3,
-      "item": 5,
-      "cantidad": 1
+      "cantidad": 4,
+      "id": 1
     },
     {
       "item": 2,
       "cantidad": 1,
-      "id": 4
-    },
-    {
-      "item": 6,
-      "cantidad": 1,
-      "id": 5
+      "id": 2
     }
   ]
 }

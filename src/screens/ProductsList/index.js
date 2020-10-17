@@ -1,17 +1,21 @@
 import React from 'react';
-import { Text, FlatList } from 'react-native';
-import Product from "eco/src/screens/ProductsList/Product";
+import { View, Text, FlatList, StyleSheet } from 'react-native';
+import Product from "Ecommerce/src/screens/Product";
+import OwnStyles from "Ecommerce/src/styles/OwnStyles";
 
-class ProductsList extends React.Component {
-    
-    render = () => {
-        const { products, loading } = this.props;
-        return (<FlatList
-            data={products}
-            renderItem={({item}) => loading ? <Text>Loading...</Text> : <Product product={item} />}
-            keyExtractor = {(item, index) => index.toString()}
-        />);
-    };
-};
+const styles = StyleSheet.create({
+  list: {
+    width: "90%"
+  }
+});
+
+const ProductsList = ( props ) => (
+    <FlatList
+      style={styles.list}
+      data={props.products}
+      renderItem={({item}) => props.loading ? <View style={OwnStyles.container}><Text>Loading...</Text></View> : <Product product={item} />}
+      keyExtractor = {item => item.id.toString()}
+    />
+);
 
 export default ProductsList;

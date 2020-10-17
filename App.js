@@ -1,12 +1,9 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import MainContent from "eco/src/screens/MainContent";
+import AppNavigator from './src/navigation/AppNavigator';
 
 const App: () => React$Node = () => {
-  return (
-    <>
-      <MainContent />
-    </>
-  );
+  return <AppNavigator />;
 };
 
-export default App; 
+export default App;

@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
 import {
-  SafeAreaView,
+  View,
   FlatList,
   Text,
   StatusBar,
+  StyleSheet
 } from 'react-native';
-import ProductsList from "eco/src/screens/ProductsList";
-import OwnStyles from 'eco/src/styles/OwnStyles';
+import ProductsList from "Ecommerce/src/screens/ProductsList";
+import OwnStyles from 'Ecommerce/src/styles/OwnStyles';
 
-export default class MainContent extends Component {
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 25
+  }
+});
+
+class MainContent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -38,10 +45,12 @@ export default class MainContent extends Component {
         return (
             <>
                 <StatusBar barStyle="dark-content" />
-                <SafeAreaView>
+                <View style={[OwnStyles.container, styles.container]}>
                     <ProductsList products={products} loading={loading}/>
-                </SafeAreaView>
+                </View>
             </>
         );
     }
 }
+
+export default MainContent;
