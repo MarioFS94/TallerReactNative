@@ -20,6 +20,7 @@ Navigation
     -	react-native link react-native-gesture-handler
 -	Añadir este código al MainActivity.java de android:
 
+<code>
     import com.facebook.react.ReactActivityDelegate;
     import com.facebook.react.ReactRootView;
     import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
@@ -33,6 +34,8 @@ Navigation
             }
         };
     }
+</code>
+
 -   npm install @react-navigation/native
 -   npm install @react-navigation/stack
 -   npm install @react-navigation/drawer
