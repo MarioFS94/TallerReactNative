@@ -20,9 +20,9 @@ Navigation
     -	react-native link react-native-gesture-handler
 -	Añadir este código al MainActivity.java de android:
 
-import com.facebook.react.ReactActivityDelegate;
-import com.facebook.react.ReactRootView;
-import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+    import com.facebook.react.ReactActivityDelegate;
+    import com.facebook.react.ReactRootView;
+    import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
     @Override
     protected ReactActivityDelegate createReactActivityDelegate() {
@@ -33,9 +33,6 @@ import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
             }
         };
     }
--	Antes createAppContainer y createStackNavigator se importaban de react-navigation pero ahora ha cambiado; 
-    -	npm i react-navigation-stack
-    -	import { createStackNavigator } from "react-navigation-stack";
 -   npm install @react-navigation/native
 -   npm install @react-navigation/stack
 -   npm install @react-navigation/drawer
